@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Calculadora de IVA con conversor de moneda</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<h1>Calculadora de IVA con conversor de moneda</h1>
+	<form>
+		<label for="precio">Precio del producto:</label>
+		<input type="text" id="precio" name="precio" required>
+
+		<label for="cantidad">Cantidad:</label>
+		<input type="text" id="cantidad" name="cantidad" required>
+
+		<label for="porcentajeIva">Porcentaje de IVA:</label>
+		<input type="text" id="porcentajeIva" name="porcentajeIva" required>
+
+		<label for="moneda">Moneda:</label>
+		<select id="moneda" name="moneda">
+			<option value="USD">Dólar estadounidense (USD)</option>
+			<option value="EUR">Euro (EUR)</option>
+			<option value="PYG" selected>Peso paraguayo (PYG)</option>
+		</select>
+
+		<button type="button" onclick="calcularIVA()">Calcular</button>
+	</form>
+
+	<div id="resultado"></div>
+
+	<script src="script.js"></script>
+</body>
+</html>
+
+
+
